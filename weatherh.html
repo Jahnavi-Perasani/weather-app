@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Weather App</title>
+  <link rel="stylesheet" href="weatherc.css" />
+</head>
+<body>
+  <div class="weather-card">
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Search City" />
+      <button onclick="getWeather()">
+        🔍
+      </button>
+    </div>
+    <div class="location-date">
+      <span id="location">Toronto</span>
+      <span id="date">Thu, 09 July</span>
+    </div>
+    <div class="weather-main">
+      <img id="weatherIcon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="weather icon" />
+      <div class="temp-desc">
+        <h2 id="temp">30°C</h2>
+        <p id="description">Clouds</p>
+      </div>
+    </div>
+    <div class="details">
+      <p>💧 Humidity: <span id="humidity">74%</span></p>
+      <p>🌬️ Wind: <span id="wind">4.12 m/s</span></p>
+    </div>
+    <div class="forecast" id="forecast">
+      <!-- Forecast cards inserted dynamically -->
+    </div>
+  </div>
+
+  <script src="weatherj.js"></script>
+</body>
+</html>
